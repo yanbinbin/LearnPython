@@ -81,7 +81,7 @@ postDict={
 postData = urllib.parse.urlencode(postDict).encode()
 
 # 构造请求
-res = opener.open(url, postDict)
+res = opener.open(url, postData)
 data = res.read()
 # 解压缩
 data = ungzip(data)
