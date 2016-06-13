@@ -32,7 +32,7 @@ def saveImgs(content):
     patternImg = re.compile(r'<img class="BDE_Image" src="(.*?)"')
     i = 1;
     while(i <= pageCount):
-        pageUrl = url + '?' + str(i)
+        pageUrl = url + '?pn=' + str(i)
         print("第%d页的链接为：%s" % (i, pageUrl))
         count = 0
         pageContent = getWebContent(pageUrl)
