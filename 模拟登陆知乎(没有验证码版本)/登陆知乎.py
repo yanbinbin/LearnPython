@@ -2,6 +2,7 @@
 登录
 
 对于需要用户登录的网站信息的爬取
+参考链接：http://blog.csdn.net/fly_yr/article/details/51531650
 
 '''
 
