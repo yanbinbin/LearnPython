@@ -25,7 +25,7 @@ def getWebContent(url):
     return content
 
 def saveImgs(content):
-    patternCount = re.compile(r'PageData.pager = {"cur_page":\d,"total_page":(\d)}')
+    patternCount = re.compile(r'PageData.pager = {"cur_page":\d+,"total_page":(\d+)}')
     pageCounts = re.findall(patternCount, content)
     pageCount = int(pageCounts[0])
     print("所有帖子页数：", pageCount)
